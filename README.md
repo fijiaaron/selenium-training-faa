@@ -2,7 +2,9 @@
 
 ## Prerequisites
 
-### Download and install Java JDK from https://www.oracle.com/java/technologies/javase-downloads.html
+### Download and install Java JDK
+
+from https://www.oracle.com/java/technologies/javase-downloads.html
 
 (or download the openjdk)
 
@@ -10,11 +12,13 @@
   Mac https://download.java.net/java/GA/jdk14.0.2/205943a0976c4ed48cb16f1043c5c647/12/GPL/openjdk-14.0.2_osx-x64_bin.tar.gz
   Linux https://download.java.net/java/GA/jdk14.0.2/205943a0976c4ed48cb16f1043c5c647/12/GPL/openjdk-14.0.2_linux-x64_bin.tar.gz
   
-  ### Linux
+#### Linux
   
   tar -xvzf openjdk-14.0.2_osx-x64_bin.tar.gz
   
-### Download and install Eclipse IDE from https://www.eclipse.org/
+### Download and install Eclipse IDE 
+
+from https://www.eclipse.org/
 
   Windows https://download.java.net/java/GA/jdk14.0.2/205943a0976c4ed48cb16f1043c5c647/12/GPL/openjdk-14.0.2_windows-x64_bin.zip
   Mac https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2020-09/R/eclipse-java-2020-09-R-macosx-cocoa-x86_64.dmg
