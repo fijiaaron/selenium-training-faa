@@ -1,0 +1,15 @@
+c:
+cd "\selenium share\Selenium installables\selenium 3.3.1\lib"
+java -Dwebdriver.gecko.driver="\selenium share\Selenium installables\selenium 3.3.1\resources\geckodriver.exe" ^
+-Dwebdriver.chrome.driver="\selenium share\Selenium installables\selenium 3.3.1\resources\chromedriver.exe" ^
+-Dwebdriver.ie.driver="\selenium share\Selenium installables\selenium 3.3.1\resources\ieDriverServer.exe" ^
+-jar selenium-server-standalone-3.3.1.jar -role node ^
+-hub http://192.168.1.106:4444/grid/register ^
+-port 5558 ^
+-browser "browserName=internet explorer,maxInstances=2" ^
+-browser "browserName=firefox,maxInstances=10,version=51.0.1",^
+firefox_binary="path to firefox exe for version 51.0.1" ^
+-browser "browserName=firefox,maxInstances=5,version=31.5.1",^
+firefox_binary="path to firefox exe for version 31.5.1" ^
+-browser "browserName=chrome,maxInstances=5",version=57.0.2987.133
+pause

@@ -138,4 +138,28 @@ Creating a WebDriver Framework
 
 - Using Log4j
 
--
+- Using Listeners
+
+- Typical Components of a Framework
+
+- Overview of TDD & BDD
+
+- Introduction to Jenkins
+
+
+Selenium Grid and Remote WebDriver
+----------------------------------
+
+- Using RemoteWebDriver
+
+- Setting up Standalone Selenium Server
+
+- What is Selenium Grid?
+
+- When to Use Selenium Grid
+
+- Setting up Grid - Hub and Nodes?
+
+- Configuring TestNG.xml to Run Tests on Grid
+
+- Cloud Selenium Services
