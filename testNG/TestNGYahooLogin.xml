@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="YahooTestSuit" thread-count="15">
+	<test name="Yahoo TestNG Groups">
+				<parameter name="userName"  value="<put actual EmailID here>"/>
+				<parameter name="passWord"  value="<put actual Password here>"/>
+				
+ 			<classes>     		     		    	     		
+     			<class name="testNG.yahooDependencies.YahooMailTest">  	
+     				
+     			</class>
+ 			</classes>
+     </test>      
+ </suite>

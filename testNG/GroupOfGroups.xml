@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+     <test name="TestNG Groups">
+         <groups>
+         	<define name="GroupOfGroups">
+      		   	<include name="Producers" />	 			
+	 		    <include name="Consumers" />      		   	
+	 		</define>
+	   	   <run>
+	 			<include name="GroupOfGroups"></include>	 		
+	  	   </run>
+  		</groups>
+ 		<classes>
+		    <class name="testNG.groups.TestNGGroups" />		    
+		</classes>
+     </test>
+ </suite>
