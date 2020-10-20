@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://calcbmi.com/" />
+<title>selenium IDE ecommerce</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">selenium IDE ecommerce</td></tr>
+</thead><tbody>
+<!--Opening the url. The IDE waits for the page to load before going into next line-->
+<tr>
+	<td>open</td>
+	<td>http://54.172.235.14/ethnicstore/index.php</td>
+	<td></td>
+</tr>
+<!--clickAndWait, clicks on the MyAccount button on the top right and waits for the application to transition to new page.-->
+<!--This wait time is decided based on settings of timeout in Options -> Options menu. Default timeout is 30000 seconds-->
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[3]/a/span[2]</td>
+	<td></td>
+</tr>
+<!--Typing the ID and password and click on "Sign In" button-->
+<tr>
+	<td>type</td>
+	<td>name=email_address</td>
+	<td>david.lobo@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>qweqwe</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='loginModules']/div/div/form/p[2]/span/button</td>
+	<td></td>
+</tr>
+<!--clicking on "The Ethinic Store" image at the top to go to home page-->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=img[alt=&quot;The Ethnic Store&quot;]</td>
+	<td></td>
+</tr>
+<!--Clicking on link "Turqoise Salwar"-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Turqoise Salwar</td>
+	<td></td>
+</tr>
+<!--clicking on "Add To Cart" button-->
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='bodyContent']/form/div[2]/div[2]/span/span/button</td>
+	<td></td>
+</tr>
+<!--clicking on "Checkout" button -->
+<tr>
+	<td>clickAndWait</td>
+	<td>//span/span/a/span[2]</td>
+	<td></td>
+</tr>
+<!--clicking on "Continue" button-->
+<tr>
+	<td>clickAndWait</td>
+	<td>id=tdb6</td>
+	<td></td>
+</tr>
+<!--clicking on Cash on Delivery radio button-->
+<tr>
+	<td>click</td>
+	<td>name=payment</td>
+	<td></td>
+</tr>
+<!--clicking on "Continue" button on the same page-->
+<tr>
+	<td>clickAndWait</td>
+	<td>id=tdb6</td>
+	<td></td>
+</tr>
+<!--clicking on "Confirm Order" button-->
+<tr>
+	<td>clickAndWait</td>
+	<td>id=tdb5</td>
+	<td></td>
+</tr>
+<!--verifying whether text displayed at the top is as per expected value "Your Order Has Been Processed!"-->
+<tr>
+	<td>verifyText</td>
+	<td>css=h1</td>
+	<td>Your Order Has Been Processed!</td>
+</tr>
+<!--Clicking on "Log Off" button at the top-->
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[4]/a/span</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
