@@ -1,5 +1,5 @@
-# Selenium Training 
+# Selenium Training
 
-Setup dependencies (SETUP.md)
+[Setup dependencies](SETUP.md)
 
-View course outline (OUTLINE.md)
+[View course outline](OUTLINE.md)
