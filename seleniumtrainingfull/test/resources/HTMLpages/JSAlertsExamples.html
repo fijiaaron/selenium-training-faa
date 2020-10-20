@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<script type="text/javascript">
+	function simpleAlert()
+	{
+		alert("Please enter the email ID, before navigating to next Page");
+	}
+
+	function confirmAlert()
+	{
+		var x;
+		var r=confirm("Do You Really Want To Save?");
+		if (r==true)
+		{
+		  x="You Clicked on OK!";
+		}
+		else
+		{
+		  x="You Clicked Cancel!";
+		}
+		document.getElementById("saveResult").innerHTML=x;
+	}
+
+	function promptAlert()
+	{
+		var response;
+
+		var emailID=prompt("Email ID is mandatory, do you want to enter Now?","example@domain.com");
+
+		if (name!=null)
+		{
+		  response="Thanks ! Your Email ID is - " + emailID ;
+		  document.getElementById("email").innerHTML=response;
+		}
+	}
+</script>
+<title>Learn JavaScript Alerts</title>
+</head>
+<body>
+  <p>Click the button to go to next page.</p>
+  <input id="simple" onclick="simpleAlert()" value="Next Page" type="button">
+  </br>
+  </br>
+  </br>
+  <p>Click the button to Save Data.</p>
+
+  <button id="confirm" onclick="confirmAlert()">Save</button>
+
+  <p id="saveResult"></p>
+
+  <script type="text/javascript">
+
+  </script>
+  </br>   
+  <p>Click to Enter Your EmailID if not entered already</p>
+
+  <button id="prompt" onclick="promptAlert()">Check Email</button>
+
+  <p id="email"></p>
+
+  <script type="text/javascript">
+  </script>
+  </br>
+  </br>
+  </br>  
+  <p>Below will not open JavaScript Alert but a Windows pop-up</p>  
+   <button id="Window popup" onclick='window.open("http://www.flipkart.com","Flipkart","width=1000,height=600")'>Window Popup</button>
+	
+</body></html>

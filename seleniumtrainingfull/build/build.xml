@@ -1,0 +1,41 @@
+<project name="ExecuteTestNGTests" default="runregressiontest"
+	basedir=".">
+	<!-- Define <testng> task -->
+	<taskdef name="testng" classname="org.testng.TestNGAntTask">
+		<classpath>
+			<pathelement location="../lib/testng-6.11.jar" />
+		</classpath>
+	</taskdef>
+	<property name="testfolder" location="../bin" />    <!-- Executable Path -->
+	<property name="srcfolder" location="../test" />    <!-- Source Path -->
+	<property name="libfolder" location="../lib" />     <!-- External libraries Path -->
+	<property name="full-compile" value="true" />       <!-- Whether to show individual file names --> 
+	<path id="classpath.base" />
+
+	<path id="classpath.test">
+		<fileset dir="${libfolder}">
+			<include name="**/*.jar" />
+		</fileset>
+		<pathelement location="${testfolder}" />
+		<pathelement location="${srcfolder}" />
+		<path refid="classpath.base" />
+	</path>
+	
+	<target name="deleteOldExecutables"> <!-- Delete old executable files -->
+		<delete verbose="${full-compile}">
+			<fileset dir="${testfolder}" includes="**/*.class" />
+		</delete>
+	</target>
+
+	<target name="compileLatestSource" depends="deleteOldExecutables"> <!-- Compile new source codes  -->
+		<javac srcdir="${srcfolder}" destdir="${testfolder}" verbose="${full-compile}">
+			<classpath refid="classpath.test" />
+		</javac>
+	</target>
+
+	<target name="runregressiontest" depends="compileLatestSource"> <!-- Run TestNG suite -->
+		<testng outputdir="${testfolder}" classpathref="classpath.test">
+			<xmlfileset dir="${srcfolder}/testNG/" includes="ConfigurationAnnotations.xml" />
+		</testng>
+	</target>
+</project>
