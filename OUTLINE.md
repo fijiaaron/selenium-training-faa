@@ -1,165 +1,169 @@
+FAA Selenium Training Schedule
+==============================
 
-Selenium Training 3.0
-=====================
 
+--- Day 1 ---
 
 
 Automation Basics
 -----------------
 
-- Fundamentals of Test Automation
+### Fundamentals of Test Automation
+### ROI of Test Automation
+### Basics of Automation Frameworks
+### Various Automation Tools
+### Comparison of Selenium with Other Automation Tools
 
-- ROI in Automation
-
-- Automation Framework
-
-- Various Tools and Comparison with Selenium
-
-
-
-Core Java Refresher
+Core Java Refresher 
 -------------------
 
-- Keywords and Syntax
+### Why Java?
+### Hello World
+### Java Architecture & Ecosysterm
+### Keywords & Syntax
+### Variables & Data Types
+### Operators & Control Flow (Loops and Conditionals)
 
-- Variables Operators and Control Flows
+Object Oriented Programming with Java
+-------------------------------------
 
-- Object Oriented Programming (OOP) from Java Context
+### OOP Concepts
+### Abstraction, Encapsulation, Inheritance, Polymorphism
+### Classes and Objects
+### Properties, Methods, & Return Types Return types
+### Access Modifiers / Getters & Setters
+### Extending a class
+### Implementing an interface
 
-- Exception Handling, File and DB Handlng
+Advanced Java Features
+----------------------
 
-- Collection overview and ArrayList example
-
-
+### Numeric & Mathmatical Operations
+### String operations
+### Collections
+### File & Network IO
+### Databas Access
 
 Introduction to Selenium WebDriver
 ----------------------------------
 
-- What Selenium is and How it is Used in the Industry
-
-- Features of Selenium
-
-- Selenium IDE - Overview and Examples
-
-- WebDriver Architecture
-
-- Installation of Selenium and Supporting Tools
+### What Selenium is and How it is Used in the Industry
+### Features of Selenium
+### Selenium IDE - Overview and Examples
+### WebDriver Architecture
+### Installation of Selenium and Supporting Tools
 
 
----
+------------------------------
+
+
+--- Day 2 ---
 
 
 Locating Techniques
 -------------------
 
-- Simple WebDriver Framework
-
-- Basics of HTML - Pages, Tags, Attributes, and Text
-
-- Importance of Attributes in Locating Elements
-
-- Working with Developer Tools
-
-- Different Locator Strategies
-
-- Creating Robust Locators using XPATH and CSS Selectors
+### Simple WebDriver Framework
+### Basics of HTML - Pages, Tags, Attributes, and Text
+### Importance of Attributes in Locating Elements
+### Working with Developer Tools 
+### Different Locator Strategies
+### Creating Robust Locators using XPATH and CSS Selectors
 
 
-
-WebDriver Basics - Part 1
+WebDriver Basics
 -------------------------
 
-- Execute Tests in Firefox, Chrome, and Internet Explorer
-
-- Webdriver Commands
-
-- Working with WebElement
-
-- Handling Various WebElements
+### Execute Tests in Firefox, Chrome, & Internet Explorer
+### Webdriver Commands
+### Working with WebElement 
+### Handling Various WebElements
+### Operating on Multiple Elements 
 
 
+Advanced WebDriver Features
+---------------------------
 
-WebDriver Basics - Part 2
--------------------------
-
-- Synchronization with Implicit and Explicit Waits
-
-- Operating on Multiple Elements
-
-- Handling Alerts, Pop-ups, and Frames
-
-- Performing Complex Actions
-
-- Taking Screenshots
-
-
----
+### Synchronization with Implicit and Explicit Waits
+### Handling Alerts, Pop-ups, and Frames
+### Performing Complex Actions 
+### Taking Screenshots
 
 
 Running Tests with TestNG
 -------------------------
 
-- Structuring Tests - Arrange, Act, Assert
-
-- F.I.R.S.T. Principles and S.O.L.I.D. Principles
-
-- Introduction to TestNG
-
-- Annotations in TestNG
-
-- TestNG XML Configuration File
-
-- Configuration Annotations
-
-- @Test Attributes
-
-- Parallel Test Excution
-
-- Assertion API
-
-- Passing Parameters to Tests
-
-- Configuring Test Suites
-
-- Reporting with TestNG
-
+### Structuring Tests - Arrange, Act, Assert
+### F.I.R.S.T. Principles and S.O.L.I.D. Principles
+### Introduction to TestNG
+### Annotations in TestNG
+### TestNG XML Configuration File
+### Configuration Annotations
+### @Test Attributes
+### Parallel Test Excution
+### Assertion API
+### Passing Parameters to Tests
+### Configuring Test Suites
+### Reporting with TestNG
 
 
 Creating a WebDriver Framework
 ------------------------------
 
-- Various Types of Frameworks
+### Various Types of Frameworks
+### Page Object Pattern using PageFactory
+### Data Driven Tests using TestNG DataProviders
+### Maven Project Setup and Dependency Management
+### Using Log4j
+### Overview of BDD, TDD
+### Continuous Integration 
+### Configuring Jenkins to Invoke Selenium Tests
 
-- Page Object Pattern using PageFactory
-
-- Data Driven Tests using TestNG DataProviders
-
-- Maven Project Setup and Dependency Management
-
-- Using Log4j
-
-- Using Listeners
-
-- Typical Components of a Framework
-
-- Overview of TDD & BDD
-
-- Introduction to Jenkins
+------------------------------
 
 
-Selenium Grid and Remote WebDriver
-----------------------------------
+--- Day 3 ---
 
-- Using RemoteWebDriver
+A Real World Test Project
+-------------------------
 
-- Setting up Standalone Selenium Server
+### Automate Testing an ECommerce Application
+### Test Automation Requirements & Expectations 
+### High level Framework Design
+### Working with Page Object Model
+### Configurability
+### Test Data Management
+### Logging and Reporting
 
-- What is Selenium Grid?
+Testing with Databases
+----------------------
 
-- When to Use Selenium Grid
+### Intro to Database Testing
+### SQL Refresher
+### JDBC and Java Database Access
+### Data Setup & Validation
+### Verifying Test Results in the Database
 
-- Setting up Grid - Hub and Nodes?
 
-- Configuring TestNG.xml to Run Tests on Grid
+Behavior Driven Development and Testing with Cucumber
+-----------------------------------------------------
 
-- Cloud Selenium Services
+### Introduction to BDD & Cucumber
+### Gherkin Syntax (Given, When, Then)
+### Setup a Project with Cucumber and Seleniunm
+### Features, Scenarios, and Step Definitions
+### Step Definition Arguments
+### Background & Tags
+### Scenario Outlines & Data Tables
+
+	
+Selenium Grid
+-------------
+
+### What is Selenium Grid?
+### When to Use Selenium Grid
+### Setting up Grid - Hub and Nodes?
+### Configuring TestNG.xml to Run Tests on Grid
+
+
+
