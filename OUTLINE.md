@@ -2,7 +2,12 @@ FAA Selenium Training Outline
 =============================
 
 
-<div style="background-color:#369; color: white">Day 1</div>
+------------------------------
+
+Day 1
+
+------------------------------
+
 
 
 Automation Basics
@@ -56,8 +61,10 @@ Introduction to Selenium WebDriver
 
 ------------------------------
 
+Day 2
 
-<div style="background-color:#369; color: white">Day 2</div>
+------------------------------
+
 
 
 Locating Techniques
@@ -119,10 +126,12 @@ Creating a WebDriver Framework
 - Continuous Integration 
 - Configuring Jenkins to Invoke Selenium Tests
 
+
 ------------------------------
 
+Day 3
 
-<div style="background-color:#369; color: white">Day 2</div>
+------------------------------
 
 
 A Real World Test Project
