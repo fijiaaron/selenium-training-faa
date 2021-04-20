@@ -1,7 +1,0 @@
-<project name="SeleniumTraining" default="HelloSelenium" basedir=".">
-   <target name="HelloSelenium" >
-      <echo>
-          Hello Selenium - This was the result of ANT build !!!
-      </echo>
-   </target>  
-</project>
