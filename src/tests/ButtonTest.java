@@ -1,6 +1,7 @@
 package tests;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -32,6 +33,8 @@ public class ButtonTest
 	public void getAllTheButtons()
 	{
 		driver.get("https://www.faa.gov/");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		List<WebElement> buttons = driver.findElements(By.tagName("button"));
 		System.out.println("number of buttons: " + buttons.size());
 		

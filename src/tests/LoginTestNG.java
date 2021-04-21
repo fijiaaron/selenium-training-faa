@@ -5,6 +5,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -38,19 +39,33 @@ public class LoginTestNG
 	@Test
 	public void successfulLogin()
 	{	
-	    driver.findElement(By.id("username")).sendKeys("tomsmith");
-	    driver.findElement(By.id("password")).sendKeys("SuperSecretPassword!");
-	    driver.findElement(By.cssSelector(".fa")).click();
+	    WebElement username = driver.findElement(By.id("username"));
+	    username.sendKeys("tomsmith");
+	    
+	    WebElement password = driver.findElement(By.id("password"));
+	    password.sendKeys("SuperWrongPassword!");
+	    
+	    WebElement loginButton = driver.findElement(By.cssSelector("#login button"));
+	    loginButton.click();
 	    
 	    String message1 = driver.findElement(By.id("flash")).getText();
 	    System.out.println(message1);
+	    
+	    String title = driver.getTitle();
+	    assertEquals(title, "The Internet");
+	    
+	    String url = driver.getCurrentUrl();
+	    System.out.println(url);
 	    
 	    assertEquals(message1, "You logged into a secure area!\n"+ "×");
 	    
 	    driver.findElement(By.linkText("Logout")).click();
 	    String message2 = driver.findElement(By.id("flash")).getText();
 	    System.out.println(message2);
-
+	    
+	    url = driver.getCurrentUrl();
+	    System.out.println(url);
+	    
 	    assertEquals(message2, "You logged out of the secure area!\n"+ "×");
 	}
 	
@@ -58,10 +73,14 @@ public class LoginTestNG
 	@Test
 	public void unsuccessfulLogin()
 	{
- 
-	    driver.findElement(By.id("username")).sendKeys("tomsmith");
-	    driver.findElement(By.id("password")).sendKeys("SuperWrongPassword!");
-	    driver.findElement(By.cssSelector(".fa")).click();
+	    WebElement username = driver.findElement(By.id("username"));
+	    username.sendKeys("tomsmith");
+	    
+	    WebElement password = driver.findElement(By.id("password"));
+	    password.sendKeys("SuperWrongPassword!");
+	    
+	    WebElement loginButton = driver.findElement(By.cssSelector("#login button"));
+	    loginButton.click();
 	    
 	    String message1 = driver.findElement(By.id("flash")).getText();
 	    System.out.println(message1);
