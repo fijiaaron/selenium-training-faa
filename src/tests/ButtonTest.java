@@ -35,6 +35,7 @@ public class ButtonTest
 		driver.get("https://www.faa.gov/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		
 		List<WebElement> buttons = driver.findElements(By.tagName("button"));
 		System.out.println("number of buttons: " + buttons.size());
 		
