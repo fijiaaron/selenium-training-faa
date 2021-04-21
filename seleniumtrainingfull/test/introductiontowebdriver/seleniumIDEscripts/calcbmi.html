@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.seleniumhq.org/" />
+<title>calcbmi</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">calcbmi</td></tr>
+</thead><tbody>
+<!--Go to the website-->
+<tr>
+	<td>open</td>
+	<td>http://www.calcbmi.com/</td>
+	<td></td>
+</tr>
+<!--Enter height and weight and click on "Calculate BMI (metric)" button-->
+<tr>
+	<td>type</td>
+	<td>id=cm</td>
+	<td>178</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=kg</td>
+	<td>60</td>
+</tr>
+<!--Not it is only click and not clickAndWait-->
+<tr>
+	<td>click</td>
+	<td>id=sm</td>
+	<td></td>
+</tr>
+<!--Explicitly wait for the bmi to be available. Note that there is no page refresh and hence clickAndWait on Calculate BMI will not wait for the BMI to be available.-->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='res']/table/tbody/tr[4]/td/b</td>
+	<td></td>
+</tr>
+<!--Verifying bmi and bmi category with expected value provided in Value field-->
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='res']/table/tbody/tr[4]/td</td>
+	<td>18.94</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='res']/table/tbody/tr[5]/td/b</td>
+	<td>Normal weight</td>
+</tr>
+</tbody></table>
+</body>
+</html>

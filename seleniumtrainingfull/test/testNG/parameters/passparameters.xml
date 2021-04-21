@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parameter Test" parallel="none">
+    <parameter name="Browser" value="CHROME"></parameter>
+     <parameter name="OS" value="Windows"></parameter>
+	<parameter name="Url" value="http://www.google.com"></parameter>     
+  <test name="Parameter Not Provided takes Suite level parameter">
+     <classes>
+      <class name="testNG.parameters.RecieveParameterFromXMLTest"/>     
+    </classes>
+  </test> <!-- Test -->
+  <test name="Parameter Provided takes test parameter">
+    <parameter name="Browser" value="Firefox"></parameter>
+     <classes>
+      <class name="testNG.parameters.ParameterTest2"/>
+    </classes>
+  </test> <!-- Test -->
+ </suite> <!-- Suite -->

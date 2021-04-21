@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parameter Test" parallel="tests">
+  <test name="Parameter Not Provided Takes default as Firefox">
+     <classes>
+      <class name="testNG.parameters.RecieveParameterFromXMLTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Parameter Provided so takes the specific parameter">
+    <parameter name="Browser" value="Chrome"></parameter>
+     <classes>
+      <class name="testNG.parameters.RecieveParameterFromXMLTest"/>
+    </classes>
+  </test> <!-- Test -->
+ </suite> <!-- Suite -->

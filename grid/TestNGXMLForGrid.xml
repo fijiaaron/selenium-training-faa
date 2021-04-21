@@ -1,0 +1,103 @@
+<suite name="Parallel Tests" verbose="1" thread-count="9" parallel="tests">
+	<tests>
+	<test name="Windows+firefox Test">
+	  		<parameters>
+		  		<parameter name="platform" value="Windows" />
+		  		<parameter name="browser" value="firefox" />
+		  		<parameter name="version" value="31.7.0" />
+		  		<parameter name="url" value="http://www.calcbmi.com/"/>
+	  		</parameters>
+	     	<classes>
+	      		<class name="grid.BMICalculateGrid" />
+	    	</classes>
+	 </test>
+	 <test name="Windows+chrome Test">
+	  		<parameters>
+		  		<parameter name="platform" value="Windows" />
+		  		<parameter name="browser" value="chrome" />
+		  		<parameter name="version" value="9.0.1" />
+		  		<parameter name="url" value="http://www.calcbmi.com/"/>
+	  		</parameters>
+	     	<classes>
+	      		<class name="grid.BMICalculateGrid" />
+	    	</classes>
+		</test>
+		<test name="Windows+ie Test">
+	  		<parameters>
+		  		<parameter name="platform" value="Windows" />
+		  		<parameter name="browser" value="Internet Explorer" />
+		  		<parameter name="version" value="" />
+		  		<parameter name="url" value="http://www.calcbmi.com/"/>
+	  		</parameters>
+	    	 <classes>
+	      		<class name="grid.BMICalculateGrid" />
+	    	</classes>
+	  	</test>
+	  	<test name="Mac+firefox Test">
+	  		<parameters>
+		  		<parameter name="platform" value="Mac" />
+		  		<parameter name="browser" value="firefox" />
+		  		<parameter name="version" value="31.7.0" />
+		  		<parameter name="url" value="http://www.calcbmi.com/"/>
+	  		</parameters>
+	     	<classes>
+	      		<class name="grid.BMICalculateGrid" />
+	    	</classes>
+	 </test>
+	 <test name="Mac+chrome Test">
+	  		<parameters>
+		  		<parameter name="platform" value="Mac" />
+		  		<parameter name="browser" value="chrome" />
+		  		<parameter name="version" value="9.0.1" />
+		  		<parameter name="url" value="http://www.calcbmi.com/"/>
+	  		</parameters>
+	     	<classes>
+	      		<class name="grid.BMICalculateGrid" />
+	    	</classes>
+		</test>
+		<test name="Mac+ie Test">
+	  		<parameters>
+		  		<parameter name="platform" value="Mac" />
+		  		<parameter name="browser" value="Internet Explorer" />
+		  		<parameter name="version" value="" />
+		  		<parameter name="url" value="http://www.calcbmi.com/"/>
+	  		</parameters>
+	    	 <classes>
+	      		<class name="grid.BMICalculateGrid" />
+	    	</classes>
+	  	</test>	 	 	
+	  	<test name="Linux+firefox Test">
+	  		<parameters>
+		  		<parameter name="platform" value="Linux" />
+		  		<parameter name="browser" value="firefox" />
+		  		<parameter name="version" value="31.7.0" />
+		  		<parameter name="url" value="http://www.calcbmi.com/"/>
+	  		</parameters>
+	     	<classes>
+	      		<class name="grid.BMICalculateGrid" />
+	    	</classes>
+	 </test>
+	 <test name="Linux+chrome Test">
+	  		<parameters>
+		  		<parameter name="platform" value="Linux" />
+		  		<parameter name="browser" value="chrome" />
+		  		<parameter name="version" value="9.0.1" />
+		  		<parameter name="url" value="http://www.calcbmi.com/"/>
+	  		</parameters>
+	     	<classes>
+	      		<class name="grid.BMICalculateGrid" />
+	    	</classes>
+		</test>
+		<test name="Linux+ie Test">
+	  		<parameters>
+		  		<parameter name="platform" value="Linux" />
+		  		<parameter name="browser" value="Internet Explorer" />
+		  		<parameter name="version" value="" />
+		  		<parameter name="url" value="http://www.calcbmi.com/"/>
+	  		</parameters>
+	    	 <classes>
+	      		<class name="grid.BMICalculateGrid" />
+	    	</classes>
+	  	</test>	 
+	</tests>
+</suite>
