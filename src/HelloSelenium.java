@@ -13,11 +13,5 @@ public class HelloSelenium
 		driver = new ChromeDriver();
 		driver.get("https://www.faa.gov/");
 		driver.quit();
-		
-		System.out.println("We're going to start firefox with selenium....");
-		System.setProperty("webdriver.gecko.driver", "resources\\geckodriver.exe");
-		driver = new FirefoxDriver();
-		driver.get("https://www.faa.gov/");
-		driver.quit();
 	}
 }
