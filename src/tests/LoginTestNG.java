@@ -43,7 +43,7 @@ public class LoginTestNG
 	    username.sendKeys("tomsmith");
 	    
 	    WebElement password = driver.findElement(By.id("password"));
-	    password.sendKeys("SuperWrongPassword!");
+	    password.sendKeys("SuperSecretPassword!");
 	    
 	    WebElement loginButton = driver.findElement(By.cssSelector("#login button"));
 	    loginButton.click();
