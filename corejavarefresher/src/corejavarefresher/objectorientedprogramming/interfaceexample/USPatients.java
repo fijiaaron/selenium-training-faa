@@ -12,9 +12,9 @@ public class USPatients implements PatientInterface {
 	boolean admitted;
 	public static int noOfPatients;
 
-	public USPatients(String name, String adharNumber) {
+	public USPatients(String name, String ssn) {
 		this.name = name;
-		this.SSN = adharNumber;
+		this.SSN = ssn;
 		noOfPatients++;
 	}
 
