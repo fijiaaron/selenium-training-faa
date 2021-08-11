@@ -1,11 +1,24 @@
 public class Math
 {
-	public static void main(String[] args)
+	public static void main(String[] args) throws Exception
 	{
-		double a = 5.000000;
-		double b = 3; 
-		double c = a / b;
+		int a = 5;
+		int b = 0; 
 		
-		System.out.println("the total is " + c);
+		try 
+		{
+			int c = a / b;
+			System.out.println("the total is " + c);
+		}
+		catch (Exception e)
+		{
+			System.out.println("Sorry, I can't calculate ");
+			e.printStackTrace();
+		}
+		finally
+		{
+			System.out.println("Have a nice day!");
+			throw new Exception("illegal denominator!!!!");
+		}
 	}
 }
