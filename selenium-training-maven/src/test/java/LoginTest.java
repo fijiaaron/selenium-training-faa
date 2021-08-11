@@ -39,17 +39,25 @@ public class LoginTest {
   }
   @SuppressWarnings("deprecation")
 @Test
-  public void loginTest() {
+  public void loginTest() throws InterruptedException {
     driver.get("https://the-internet.herokuapp.com/login");
     driver.findElement(By.cssSelector("html")).click();
     driver.findElement(By.id("username")).click();
+    
+    By usernameLocator = By.id("username");
+    WebElement usernameField = driver.findElement(usernameLocator);
+    
     driver.findElement(By.id("username")).sendKeys("tomsmith");
     driver.findElement(By.id("password")).click();
     driver.findElement(By.name("password")).sendKeys("SuperSecretPassword!");
+    Thread.sleep(1000);
     driver.findElement(By.cssSelector("button[type=submit]")).click();
+    Thread.sleep(5000);
     assertThat(driver.findElement(By.id("flash")).getText(), is("You logged into a secure area!\n×"));
     assertThat(driver.findElement(By.cssSelector("h2")).getText(), is("Secure Area"));
+    Thread.sleep(1000);
     driver.findElement(By.cssSelector("a.button")).click();
+    Thread.sleep(1000);
     assertThat(driver.findElement(By.id("flash")).getText(), is("You logged out of the secure area!\n×"));
     assertThat(driver.findElement(By.cssSelector("h2")).getText(), is("Login Page"));
   }
