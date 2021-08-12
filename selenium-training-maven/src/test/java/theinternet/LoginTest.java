@@ -28,7 +28,7 @@ public class LoginTest extends SeleniumTest
 	  
 		String message = loginPage.getMessage();
 		
-		assertEquals(message, "You logged into a secure area!\n×");
+		assertEquals(message, "You logged into a secure area!\nÃ—");
 	}
 	
 	@Test
@@ -38,6 +38,6 @@ public class LoginTest extends SeleniumTest
 	    
 		String message = loginPage.getMessage();
 		
-		assertEquals(message, "Your password is invalid!\n×");
+		assertEquals(message, "Your password is invalid!\nÃ—");
 	}
 }

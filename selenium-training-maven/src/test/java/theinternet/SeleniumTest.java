@@ -13,11 +13,20 @@ public class SeleniumTest
 	@BeforeMethod
 	public void setup()
 	{
-		System.setProperty("webdriver.edge.driver", "src/test/resources/msedgedriver.exe");
-		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 		
-//		driver = new ChromeDriver();
-		driver = new EdgeDriver();
+		String os = System.getProperty("os.name").toLowerCase();
+		if (os.contains("windows"))
+		{
+			System.setProperty("webdriver.edge.driver", "src/test/resources/msedgedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
+		}
+		else if (os.contains("mac"))
+		{
+			System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
+		}
+		
+		driver = new ChromeDriver();
+//		driver = new EdgeDriver();
 	}
 	
 	@AfterMethod
