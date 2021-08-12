@@ -3,13 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="theinternet.LoginTest">
+      <class name="theinternet.DataDrivenLoginTest">
         <methods>
           <include name="setup"/>
           <include name="cleanup"/>
-          <include name="loginFailure"/>
+          <include name="testLogin" invocation-numbers="2"/>
         </methods>
-      </class> <!-- theinternet.LoginTest -->
+      </class> <!-- theinternet.DataDrivenLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

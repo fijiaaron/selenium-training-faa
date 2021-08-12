@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [AllTests]">
-  <parameter name="browser" value="edge"/>
-  <test parallel="none" name="AirportTests(failed)">
-    <parameter name="browser" value="edge"/>
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="faa.AirportLookupTest">
+      <class name="theinternet.DataDrivenLoginTest">
         <methods>
-          <include name="airportLookup" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="cleanup"/>
+          <include name="testLogin" invocation-numbers="2"/>
         </methods>
-      </class> <!-- faa.AirportLookupTest -->
+      </class> <!-- theinternet.DataDrivenLoginTest -->
     </classes>
-  </test> <!-- AirportTests(failed) -->
-</suite> <!-- Failed suite [AllTests] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
