@@ -37,7 +37,7 @@ public class LoginTest {
   public void tearDown() {
     driver.quit();
   }
-  @SuppressWarnings("deprecation")
+
 @Test
   public void loginTest() throws InterruptedException {
     driver.get("https://the-internet.herokuapp.com/login");
