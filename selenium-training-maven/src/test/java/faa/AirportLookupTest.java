@@ -17,7 +17,6 @@ public class AirportLookupTest
 {
 	WebDriver driver;
 	
-	
 	@BeforeMethod
 	public void setup()
 	{
