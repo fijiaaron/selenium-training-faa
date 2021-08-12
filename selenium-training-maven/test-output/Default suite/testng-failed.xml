@@ -6,8 +6,8 @@
       <class name="theinternet.LoginTest">
         <methods>
           <include name="setup"/>
-          <include name="loginFailure"/>
           <include name="cleanup"/>
+          <include name="loginFailure"/>
         </methods>
       </class> <!-- theinternet.LoginTest -->
     </classes>

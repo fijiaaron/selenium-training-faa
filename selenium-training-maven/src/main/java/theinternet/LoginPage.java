@@ -28,7 +28,7 @@ public class LoginPage
 		PageFactory.initElements(driver, this);
 	}
 	
-	public  LoginPage open()
+	public LoginPage open()
 	{
 		driver.get("https://the-internet.herokuapp.com/login");
 		return this;

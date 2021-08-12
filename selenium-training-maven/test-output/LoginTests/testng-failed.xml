@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [LoginTests]">
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="theinternet.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="cleanup"/>
+          <include name="loginFailure"/>
+          <include name="loginSuccess"/>
+        </methods>
+      </class> <!-- theinternet.LoginTest -->
+      <class name="faa.AirportLookupTest">
+        <methods>
+          <include name="cleanup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- faa.AirportLookupTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [LoginTests] -->

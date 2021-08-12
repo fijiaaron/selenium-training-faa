@@ -1,41 +1,104 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="0" failed="1" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2021-08-12T16:49:00Z" name="AllTests" finished-at="2021-08-12T16:49:07Z" duration-ms="6544">
-    <groups>
-    </groups>
-    <test started-at="2021-08-12T16:49:00Z" name="AirportTests" finished-at="2021-08-12T16:49:07Z" duration-ms="6544">
-      <class name="faa.AirportLookupTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:faa.AirportLookupTest@4d518b32]" started-at="2021-08-12T10:49:00Z" name="setup" finished-at="2021-08-12T10:49:00Z" duration-ms="9" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="airportLookup(java.lang.String)[pri:0, instance:faa.AirportLookupTest@4d518b32]" started-at="2021-08-12T10:49:00Z" name="airportLookup" finished-at="2021-08-12T10:49:07Z" duration-ms="6496" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: element is not attached to the page document
+<html>
+<head>
+<title>TestNG:  AirportTests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>AirportTests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Aug 12 10:49:00 CST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>6 seconds (6544 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='faa.AirportLookupTest.airportLookup()'><b>airportLookup</b><br>Test class: faa.AirportLookupTest<br>Parameters: edge</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: MicrosoftEdge=92.0.902.67)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'AARONEVANS1ACF', ip: '10.211.55.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;AARONEVANS1ACF&apos;, ip: &apos;10.211.55.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
 Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 92.0.902.67, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60330}, msedge: {msedgedriverVersion: 92.0.902.67 (eda2f229828b81..., userDataDir: C:\Users\AARONE~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d07f770f5185c2e62c98e9bf5c84cf0a]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+Session ID: d07f770f5185c2e62c98e9bf5c84cf0a
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at faa.AirportLookupTest.airportLookup(AirportLookupTest.java:60)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace254955665", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace254955665'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: MicrosoftEdge=92.0.902.67)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'AARONEVANS1ACF', ip: '10.211.55.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;AARONEVANS1ACF&apos;, ip: &apos;10.211.55.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
 Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 92.0.902.67, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60330}, msedge: {msedgedriverVersion: 92.0.902.67 (eda2f229828b81..., userDataDir: C:\Users\AARONE~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
 Session ID: d07f770f5185c2e62c98e9bf5c84cf0a
@@ -77,13 +140,9 @@ Session ID: d07f770f5185c2e62c98e9bf5c84cf0a
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- airportLookup -->
-      </class> <!-- faa.AirportLookupTest -->
-    </test> <!-- AirportTests -->
-  </suite> <!-- AllTests -->
-</testng-results>
+</pre></div></td>
+<td>6</td>
+<td>faa.AirportLookupTest@4d518b32</td></tr>
+</table><p>
+</body>
+</html>
