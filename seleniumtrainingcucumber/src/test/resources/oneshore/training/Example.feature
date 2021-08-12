@@ -25,18 +25,18 @@ When I scan my badge
 Then I should not be able to read the top secret document
 
 @AccessDenied
-Scenario: Not an agent
+Scenario: Not an FBI agent
 
 Given I have a CIA badge
 When I scan my badge
-Then I should not be ale to read the top secret document
+Then I should not be able to read the top secret document
 
 @AccessDenied
 Scenario: Agent with top secret clearance but not on duty
 
 Given I have my FBI badge
 And I have top secret clearance
-But It is outside by hours of service
+But It is outside my hours of service
 When I scan my badge 
 Then I should not be able to read the top secret document
 And it should log my access attempt
