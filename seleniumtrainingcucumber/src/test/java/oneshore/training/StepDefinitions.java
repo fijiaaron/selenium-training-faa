@@ -1,5 +1,7 @@
 package oneshore.training;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -17,12 +19,24 @@ public class StepDefinitions
 	LoginPage loginPage;
 	SecurePage securePage;
 
-	@Given("I am on the login page")
-	public void i_am_on_the_login_page()
+	@Before
+	public void setup()
 	{
 		driver = new ChromeDriver();
 		loginPage = new LoginPage(driver);
 		securePage = new SecurePage(driver);
+	}
+
+	@After
+	public void cleanup()
+	{
+		driver.quit();
+	}
+
+	@Given("I am on the login page")
+	public void i_am_on_the_login_page()
+	{
+
 		loginPage.open();
 	}
 
